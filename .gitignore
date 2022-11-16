@@ -155,3 +155,5 @@ skin-cancer-mnist-ham10000.zip
 *.jpg
 *.csv
 skin_cancer_ISIC (2).ipynb
+Data/ISIC2018_Task1-2_Training_Input.zip
+Data/ISIC2018_Task3_Training_Input.zip
