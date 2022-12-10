@@ -1,9 +1,0 @@
-# Confusion Matrix
-y_true = yte
-y_pred = CNN1.predict(xte, verbose=1) 
-y_pred.shape
-# pred_classes = y_pred.argmax(axis=1)
-# len(pred_classes)
-# from sklearn.metrics import confusion_matrix
-# #confusion_matrix(y_true.targets.np(), y_pred.argmax(dim=1))
-# res = tf.math.confusion_matrix(y_true,y_pred)

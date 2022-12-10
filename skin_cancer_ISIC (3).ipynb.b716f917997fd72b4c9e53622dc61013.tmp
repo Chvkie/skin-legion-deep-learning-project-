@@ -1,6 +1,0 @@
-print(xtr.shape)
-print(xte.shape)
-print(ytr.shape)
-print(yte.shape)
-print(xval.shape)
-print(yval.shape)

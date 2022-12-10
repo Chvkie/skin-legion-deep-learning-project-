@@ -1,2 +1,0 @@
-# see the image size distribution
-tile_df['image'].map(lambda x: x.shape).value_counts()

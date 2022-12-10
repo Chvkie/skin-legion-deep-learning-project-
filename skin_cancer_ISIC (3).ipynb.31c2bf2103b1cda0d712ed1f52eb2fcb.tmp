@@ -1,7 +1,0 @@
-history = model.fit(xtr,ytr,
-          validation_data=(xval,yval),
-          epochs=40,
-          steps_per_epoch=len(xtr),
-          validation_steps=len(xval),
-          callbacks = early_stopping
-         )

@@ -1,5 +1,0 @@
-trial_data = tile_df.sample(500)
-features = trial_data.drop(['cell_type_idx'], axis = 1)
-label = trial_data['cell_type_idx']
-features = np.asarray(features['image'].tolist())
-label = label.to_numpy()

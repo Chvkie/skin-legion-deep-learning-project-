@@ -1,1 +1,0 @@
-tile_df['age'].fillna(int(tile_df['age'].mean()),inplace=True)

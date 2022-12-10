@@ -1,1 +1,0 @@
-processedimg = prepare_image(tile_df['image'][5])

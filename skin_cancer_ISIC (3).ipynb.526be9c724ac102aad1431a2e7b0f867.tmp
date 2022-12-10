@@ -1,2 +1,0 @@
-resnet_accuracy = resnet_model.evaluate(xte,yte, verbose=0)[1]
-print("Test: accuracy = ",resnet_accuracy*100,"%")

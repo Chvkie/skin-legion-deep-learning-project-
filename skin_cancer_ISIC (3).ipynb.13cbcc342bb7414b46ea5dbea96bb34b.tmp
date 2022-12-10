@@ -1,3 +1,0 @@
-qq = yte.argmax(axis=1)
-qq[:10]
-xx = y_pred.argmax(axis=1)

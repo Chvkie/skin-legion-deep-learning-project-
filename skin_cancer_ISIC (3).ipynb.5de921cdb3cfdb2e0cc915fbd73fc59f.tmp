@@ -1,9 +1,0 @@
-n_samples = 3
-fig, m_axs = plt.subplots(7, n_samples, figsize = (4*n_samples, 3*7))
-for n_axs, (type_name, type_rows) in zip(m_axs, 
-                                         tile_df.sort_values(['cell_type']).groupby('cell_type')):
-    n_axs[0].set_title(type_name)
-    for c_ax, (_, c_row) in zip(n_axs, type_rows.sample(n_samples, random_state=42).iterrows()):
-        c_ax.imshow(c_row['image'])
-        c_ax.axis('off')
-fig.savefig('category_samples.png', dpi=300)

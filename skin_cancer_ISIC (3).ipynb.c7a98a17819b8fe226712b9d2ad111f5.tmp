@@ -1,2 +1,0 @@
-cnn_acc2 = CNN2.evaluate(xte,yte, verbose=0)[1]
-print("CNN Test 2: accuracy = ",cnn_acc2*100,"%")

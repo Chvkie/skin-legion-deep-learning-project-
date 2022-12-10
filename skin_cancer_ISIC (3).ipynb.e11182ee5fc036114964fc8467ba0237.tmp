@@ -1,1 +1,0 @@
-CNN3.evaluate(xte,yte, verbose=0)[1]

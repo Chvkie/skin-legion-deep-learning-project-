@@ -1,3 +1,0 @@
-from sklearn.metrics import accuracy_score
-sklearn_accuracy = accuracy_score(qq, xx)
-sklearn_accuracy

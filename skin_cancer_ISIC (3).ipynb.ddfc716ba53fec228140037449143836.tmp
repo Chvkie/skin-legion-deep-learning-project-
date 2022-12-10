@@ -1,2 +1,0 @@
-accuracy1 = model.evaluate(x_test, y_test, verbose=0)[1]
-print("Test: accuracy = ",accuracy1*100,"%")

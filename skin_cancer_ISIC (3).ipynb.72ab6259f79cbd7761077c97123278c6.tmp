@@ -1,3 +1,0 @@
-plt.figure(figsize=(25,10))
-plt.title('LOCALIZATION VS CELL TYPE',fontsize = 15)
-sns.countplot(x='cell_type', hue='localization',data=tile_df)

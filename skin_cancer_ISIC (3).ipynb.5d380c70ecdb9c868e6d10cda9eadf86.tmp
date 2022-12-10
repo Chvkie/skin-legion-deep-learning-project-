@@ -1,4 +1,0 @@
-sns.catplot(
-    data=tile_df, x="cell_type", hue="localization", kind = 'count',
-    palette="bright", edgecolor=".6",height=5, aspect=10/5
-).set_xticklabels(rotation=90)

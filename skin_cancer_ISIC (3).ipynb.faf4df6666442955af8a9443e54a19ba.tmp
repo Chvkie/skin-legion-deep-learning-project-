@@ -1,2 +1,0 @@
-import missingno as msno
-msno.matrix(tile_df)

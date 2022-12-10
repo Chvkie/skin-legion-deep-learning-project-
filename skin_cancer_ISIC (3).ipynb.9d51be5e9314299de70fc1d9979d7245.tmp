@@ -1,2 +1,0 @@
-y_probs = model.predict(y_test) 
-y_preds = y_probs .argmax(axis=1)

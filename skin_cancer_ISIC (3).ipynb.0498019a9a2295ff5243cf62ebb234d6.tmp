@@ -1,2 +1,0 @@
-res = imagenet_utils.decode_predictions(pred)
-res

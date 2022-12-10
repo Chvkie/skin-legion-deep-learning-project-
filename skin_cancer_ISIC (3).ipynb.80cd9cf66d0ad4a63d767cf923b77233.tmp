@@ -1,6 +1,0 @@
-from sklearn.metrics import plot_confusion_matrix
-plot_confusion_matrix(CNN1, qq, xx,
-                             display_labels=class_names,
-                             cmap=plt.cm.Blues)
-# ,
-#                              normalize=normalize)

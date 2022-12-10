@@ -1,7 +1,0 @@
-class_names = ['Benign keratosis-like lesions ', 'Melanocytic nevi','Dermatofibroma', 
-               'Melanoma', 'Vascular lesions','Basal cell carcinoma', 'Actinic keratoses']
-make_confusion_matrix(y_true=y_test, 
-                      y_pred = y_preds, 
-                      classes = class_names,
-                      figsize = (13,13),
-                      text_size = 10)

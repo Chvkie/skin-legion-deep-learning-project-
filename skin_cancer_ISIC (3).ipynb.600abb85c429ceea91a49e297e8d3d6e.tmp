@@ -1,1 +1,0 @@
-tile_df['image'] = tile_df['path'].map(lambda x: np.asarray(Image.open(x).resize((224,224))))
