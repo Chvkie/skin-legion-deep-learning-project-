@@ -1,0 +1,2 @@
+accuracy = model.evaluate(x_test, y_test, verbose=0)[1]
+print("Test: accuracy = ",accuracy*100,"%")

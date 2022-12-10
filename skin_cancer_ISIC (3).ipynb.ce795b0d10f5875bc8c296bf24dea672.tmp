@@ -1,0 +1,17 @@
+efficientnet_model2 = create_model(model_url=efficientnet_url2, # use EfficientNetB0 TensorFlow Hub URL
+                                  num_classes=7)
+
+# Compile EfficientNet model
+efficientnet_model2.compile(loss='categorical_crossentropy',
+                           optimizer=tf.keras.optimizers.Adam(),
+                           metrics=['accuracy'])
+
+# Fit EfficientNet model 
+efficientnet_history2 = efficientnet_model2.fit(xtr,ytr, # only use 10% of training data
+                                              epochs=20, # train for 5 epochs
+                                              steps_per_epoch=len(xtr),
+                                              validation_data=(xval,yval),
+                                              validation_steps=len(xval)) #,
+                                            #   callbacks=[create_tensorboard_callback(dir_name="tensorflow_hub", 
+                                            #                                          # Track logs under different experiment name
+                            

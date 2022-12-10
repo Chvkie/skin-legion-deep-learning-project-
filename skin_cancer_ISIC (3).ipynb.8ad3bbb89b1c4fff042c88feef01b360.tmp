@@ -1,0 +1,3 @@
+# Normalizing the data
+features = features/255
+label = to_categorical(label,7)

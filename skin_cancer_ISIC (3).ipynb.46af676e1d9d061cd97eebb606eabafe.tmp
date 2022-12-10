@@ -1,0 +1,2 @@
+# See the image size distribution - should just return one row (all images are uniform)
+tile_df['image'].map(lambda x: x.shape).value_counts()

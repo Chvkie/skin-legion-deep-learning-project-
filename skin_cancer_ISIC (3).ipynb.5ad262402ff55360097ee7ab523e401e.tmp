@@ -1,0 +1,7 @@
+# Plot the learning rate versus the loss
+lrs = 1e-4 * (10 ** (np.arange(epochs)/20))
+plt.figure(figsize=(10, 7))
+plt.semilogx(lrs, history.history["loss"]) # we want the x-axis (learning rate) to be log scale
+plt.xlabel("Learning Rate")
+plt.ylabel("Loss")
+plt.title("Learning rate vs. loss");

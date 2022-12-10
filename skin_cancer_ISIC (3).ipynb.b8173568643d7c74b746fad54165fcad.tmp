@@ -1,0 +1,2 @@
+cnn_acc1 = CNN1.evaluate(xte,yte, verbose=0)[1]
+print("CNN Test 1: accuracy = ",cnn_acc1*100,"%")

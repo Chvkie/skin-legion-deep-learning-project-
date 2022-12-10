@@ -1,0 +1,9 @@
+lesion_type_dict = {
+    'akiec': 'Actinic keratoses',
+    'bcc': 'Basal cell carcinoma',
+    'bkl': 'Benign keratosis-like lesions',
+    'df': 'Dermatofibroma',
+    'nv': 'Melanocytic nevi',
+    'mel': 'Melanoma',
+    'vasc': 'Vascular lesions'
+}

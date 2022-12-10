@@ -1,0 +1,11 @@
+imageid_path_dict = {os.path.splitext(os.path.basename(x))[0]: x for x in glob(os.path.join(base_dir, '*', '*.jpg'))}
+
+# lesion_type_dict = {
+#     'nv': 'Melanocytic nevi',
+#     'mel': 'Melanoma',
+#     'bkl': 'Benign keratosis-like lesions ',
+#     'bcc': 'Basal cell carcinoma',
+#     'akiec': 'Actinic keratoses',
+#     'vasc': 'Vascular lesions',
+#     'df': 'Dermatofibroma'
+# }

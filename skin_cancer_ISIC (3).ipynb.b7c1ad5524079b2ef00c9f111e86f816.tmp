@@ -1,0 +1,3 @@
+plt.figure(figsize=(25,10))
+plt.title('LOCALIZATION VS GENDER',fontsize = 15)
+sns.countplot(y='localization', hue='sex',data=tile_df)

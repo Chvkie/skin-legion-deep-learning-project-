@@ -1,0 +1,4 @@
+xtr, xte, ytr, yte = train_test_split(aa, bb,
+                              test_size=0.2, shuffle = True, random_state = 45)
+xtr, xval, ytr, yval = train_test_split(xtr, ytr,
+                              test_size=0.25, shuffle = True, random_state = 45)

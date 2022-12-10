@@ -1,0 +1,2 @@
+b=sns.catplot(data=tile_df, x="cell_type", y="localization", jitter=False)
+b.set_xticklabels(rotation=90)

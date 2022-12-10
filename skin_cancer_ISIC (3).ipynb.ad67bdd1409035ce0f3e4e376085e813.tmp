@@ -1,0 +1,21 @@
+CNN = Sequential([
+  Conv2D(10, 3, activation='relu', input_shape=(224, 224, 3)),
+  MaxPool2D(),
+  Conv2D(10, 3, activation='relu'),
+  MaxPool2D(),
+  Conv2D(10, 3, activation='relu'),
+  MaxPool2D(),
+  Flatten(),
+  Dense(7, activation='softmax') # changed to have 10 neurons (same as number of classes) and 'softmax' activation
+])
+
+# Compile the model
+CNN.compile(loss="categorical_crossentropy", # changed to categorical_crossentropy
+                optimizer=tf.keras.optimizers.Adam(),
+                metrics=["accuracy"])
+
+CNNhist = CNN.fit(xtr,ytr,
+                        epochs=20,
+                        steps_per_epoch=len(xtr),
+                        validation_data=(xval,yval),
+                        validation_steps=len(xval))

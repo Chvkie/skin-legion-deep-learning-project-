@@ -1,0 +1,7 @@
+# Create model
+resnet_model = create_model(resnet_url, num_classes=7)
+
+# Compile
+resnet_model.compile(loss='categorical_crossentropy',
+                     optimizer=tf.keras.optimizers.Adam(),
+                     metrics=['accuracy'])

@@ -1,0 +1,2 @@
+
+sns.catplot(data=tile_df, x="localization", kind="count", palette="ch:.25", height=5, aspect=10/5).set_xticklabels(rotation=90)

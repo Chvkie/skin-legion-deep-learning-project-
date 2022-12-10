@@ -1,0 +1,1 @@
+tile_df[['cell_type_idx', 'cell_type']].sort_values('cell_type_idx').drop_duplicates()

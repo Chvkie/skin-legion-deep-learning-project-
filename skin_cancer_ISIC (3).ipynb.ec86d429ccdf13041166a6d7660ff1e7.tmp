@@ -1,0 +1,29 @@
+# CNN TRIAL
+
+import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Conv2D, MaxPool2D, Flatten, Dense
+
+
+CNN1 = Sequential([
+  Conv2D(10, 3, activation='relu', input_shape=(224, 224, 3)),
+  Conv2D(10, 3, activation='relu',kernel_regularizer = regularizers.l2(0.005)),
+  MaxPool2D(padding='same',pool_size=(2,2)),
+  Conv2D(10, 3, activation='relu',kernel_regularizer = regularizers.l2(0.005)),
+  Conv2D(10, 3, activation='relu', kernel_regularizer = regularizers.l2(0.005)),
+  MaxPool2D(padding='same',pool_size=(2,2)),
+  Flatten(),
+  Dense(7, activation='softmax')
+])
+
+# Compile the model
+CNN1.compile(loss="categorical_crossentropy", # changed to categorical_crossentropy
+                optimizer=tf.keras.optimizers.Adam(),
+                metrics=["accuracy"])
+
+CNNhist1 = CNN1.fit(xtr,ytr,
+                        epochs=10,
+                        batch_size = 3,
+                        #steps_per_epoch=60, #len(xtr),
+                        validation_data=(xval,yval),
+                        validation_steps=len(xval))

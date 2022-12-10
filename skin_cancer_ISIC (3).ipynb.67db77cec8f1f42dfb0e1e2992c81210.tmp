@@ -1,0 +1,6 @@
+plt.figure(figsize=(15,10))
+plt.subplot(1,2,1)
+tile_df['dx'].value_counts().plot.pie(autopct="%1.1f%%")
+plt.subplot(1,2,2)
+tile_df['dx_type'].value_counts().plot.pie(autopct="%1.1f%%")
+plt.show()

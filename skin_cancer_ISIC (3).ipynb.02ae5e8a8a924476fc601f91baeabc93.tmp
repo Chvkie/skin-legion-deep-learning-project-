@@ -1,0 +1,7 @@
+plt.figure(figsize=(25,10))
+plt.subplot(131)
+plt.title('AGE VS CELL TYPE',fontsize = 15)
+sns.countplot(y='age', hue='cell_type',data=tile_df)
+plt.subplot(132)
+plt.title('GENDER VS CELL TYPE',fontsize = 15)
+sns.countplot(y='sex', hue='cell_type',data=tile_df)

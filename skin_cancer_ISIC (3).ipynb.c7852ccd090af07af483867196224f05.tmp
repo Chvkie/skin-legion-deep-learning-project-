@@ -1,0 +1,32 @@
+tf.random.set_seed(42)
+
+model1 = tf.keras.Sequential([
+    tf.keras.layers.Dense(units= 32, kernel_initializer = 'uniform', activation = 'relu'),
+    tf.keras.layers.Dense(units= 64, kernel_initializer = 'uniform', activation = 'relu'),
+    tf.keras.layers.Dense(units= 128, kernel_initializer = 'uniform', activation = 'relu'),
+    tf.keras.layers.Dense(units= 256, kernel_initializer = 'uniform', activation = 'relu'),
+    tf.keras.layers.Dense(units = 7, kernel_initializer = 'uniform', activation = 'softmax')])
+
+optimizer = tf.keras.optimizers.Adam(learning_rate = 0.00075,
+                                    beta_1 = 0.9,
+                                    beta_2 = 0.999,
+                                    epsilon = 1e-8)
+
+# compile the keras model
+model1.compile(optimizer = optimizer, 
+              loss = tf.keras.losses.CategoricalCrossentropy(),
+              metrics = ['accuracy'])
+
+lr_scheduler = tf.keras.callbacks.LearningRateScheduler(lambda epoch: 1e-3 * 10 ** (epoch/20))
+
+# fit the keras model on the dataset
+history1 = model1.fit(x_train, 
+                      y_train, 
+                      batch_size = 10, 
+                      epochs = 65, 
+                      verbose = 0,
+                      callbacks = [lr_scheduler])
+
+accuracy = model1.evaluate(x_val, y_val, verbose=0)[1]
+print("Test: accuracy = ",accuracy*100,"%")
+

@@ -1,0 +1,2 @@
+accuracy = efficientnet_model.evaluate(xte, yte, verbose=0)[1]
+print("Test: accuracy = ",accuracy*100,"%")

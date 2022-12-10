@@ -1,0 +1,2 @@
+# load in all of the images
+tile_df['image'] = tile_df['path'].map(imread)

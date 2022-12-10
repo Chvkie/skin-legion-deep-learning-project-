@@ -1,0 +1,5 @@
+lrs = 1e-3 * (10**(tf.range(65)/20))
+plt.semilogx(lrs,history1.history['loss'])
+plt.xlabel('Learning Rate')
+plt.ylabel('Loss')
+plt.title('Finding the ideal learning rate')

@@ -1,0 +1,3 @@
+yte_tc = to_categorical(yte,7)
+ytr_tc = to_categorical(ytr,7)
+yval_tc = to_categorical(yval,7)

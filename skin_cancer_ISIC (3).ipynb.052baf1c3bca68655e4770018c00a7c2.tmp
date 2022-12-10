@@ -1,0 +1,2 @@
+import pandas as pd
+pd.DataFrame(history1.history).plot(title='Rates', figsize=(15, 7))
